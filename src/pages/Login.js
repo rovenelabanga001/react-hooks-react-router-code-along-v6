@@ -1,0 +1,38 @@
+import React from "react";
+import NavBar from "../components/Navbar";
+
+function Login() {
+  return (
+    <>
+      <header><NavBar/></header>
+      <main>
+        <h1>Login</h1>
+        <form>
+          <div>
+            <label for="username">Username</label>
+            <input
+              id="username"
+              type="text"
+              name="username"
+              placeholder="Username"
+            />
+          </div>
+          <br />
+          <div>
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Password"
+            />
+          </div>
+          <br/>
+          <button type="Submit">Submit</button>
+        </form>
+      </main>
+    </>
+  );
+}
+
+export default Login;
